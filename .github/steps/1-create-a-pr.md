@@ -6,15 +6,16 @@
   Encourage users to open new tabs for steps!
 -->
 
-## Step 1: Create a pull request
+## Step 1: 创建 Pull Request
 
-_Welcome to "Managing Merge Conflicts"! :wave:_
+_欢迎来到 "Managing Merge Conflicts" 课程! :wave:_
 
-**What is a _merge conflict_?**: A **merge conflict** occurs when changes are made to the same part of the same file on two different branches. You usually find out about conflicts in a pull request so let's start by creating one.
+**什么是 _合并冲突（merge conflict）_ ?**: 当两个不同分支中，对同一个文件的同一部分进行了修改时，就会产生 **合并冲突**。
+通常，我们会在创建 Pull Request 时发现这些冲突，所以接下来就先从创建一个 Pull Request 开始吧。
 
-### :keyboard: Activity: Create a pull request
+### :keyboard: 实操环节: 创建 Pull Request
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. We made a small change to a file in the repository in the `my-resume` branch.
-1. [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) setting `my-resume` as the head branch and `main` as the base branch. You can enter `Resolving merge conflicts` for the pull request title and body.
-1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+1. 打开一个新的浏览器标签页，方便一边操作一边阅读本教程。
+2. 我们已经在仓库的 `my-resume` 分支中做了一点修改。
+3. [创建一个 Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)，将 `my-resume` 设为 **head 分支**，`main` 设为 **base 分支**。Pull Request 的标题和内容可以填写为 `Resolving merge conflicts`。
+4. 等待大约 20 秒后，刷新本页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测进度并进入下一步。

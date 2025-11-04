@@ -4,22 +4,26 @@
   Define terms and link to docs.github.com.
 -->
 
-## Step 3: Create your own conflict
+## Step 3: 动手创建一个合并冲突
 
-_Good job! You've solved a merge conflict! :tada:_
+_太棒了！你已经成功解决了一次合并冲突！ :tada:_
 
-Resolving a conflict doesn't automatically merge the pull request in GitHub. Instead, it stores the resolution of the conflict in a merge commit and allows you and your team to keep working. To resolve a conflict, GitHub performs what is known as a _reverse merge_. This means that the changes from the `main` branch were merged into your `my-resume` branch. With a reverse merge, only the `my-resume` branch is updated. This allows you to test the resolved changes on your branch before you merge it into `main`.
+不过在 GitHub 上，**解决冲突后并不会自动完成合并**。 GitHub 会把你的修改保存成一次 **合并提交（merge commit）**。
 
-Now, let's get a little evil. (It's for educational purposes!)
+当我们解决冲突时，GitHub 实际上执行的是一种叫 **反向合并（reverse merge）** 的操作。
+也就是说，它会把 `main` 分支的改动合并进你的 `my-resume` 分支，而不是反过来。
+这样只有 `my-resume` 分支会更新，你可以先在自己的分支上测试修改，确认没问题后再合并回 `main`。
 
-### :keyboard: Activity: Create your own conflict
+现在，让我们来点 “挑战性的” 练习吧。
 
-We went ahead and added a new file called `references.md` and pushed that change to `main`, without updating your `my-resume` branch.
+### :keyboard: 实操环节
 
-1. Browse to the `my-resume` branch.
-1. Click the `Add file` dropdown menu and then on `Create new file`.
-1. Create a file named `references.md`.
-1. Enter some text that conflicts with what we added for `references.md` in the `main` branch.
-1. Scroll to the bottom of the page and enter a commit message for your change.
-1. Click the **Commit new file** button, making sure the "Commit directly to the `my-resume` branch" option is selected.
-1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+为了方便练习，我们将人为的制造一次合并冲突。我们已经在 `main` 分支中新增了一个文件 **`references.md`**，并推送到了远程仓库，但还没有同步到你的 `my-resume` 分支。
+
+1. 切换到 `my-resume` 分支。
+2. 点击 **Add file** 下拉菜单，选择 **Create new file**。
+3. 创建一个名为 `references.md` 的文件。
+4. 在 `references.md` 文件中输入一些与 `main` 分支中不同的内容（这样才能产生冲突）。
+5. 滚动到页面底部，为本次修改输入提交信息（commit message）。
+6. 点击 **Commit new file** 按钮，确保选中 “**Commit directly to the `my-resume` branch**”。
+7. 等待大约 20 秒后，刷新当前页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测进度并跳转到下一步。
